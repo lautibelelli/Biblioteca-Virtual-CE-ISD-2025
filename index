@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Virtual CE ISD</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1>Biblioteca Virtual CE ISD</h1>
+        <p>Material de Lengua y Literatura</p>
+    </header>
+
+    <main>
+        <nav class="main-nav">
+            <a href="archivos/primer_ano.html">Primer Año</a>
+            <a href="archivos/segundo_ano.html">Segundo Año</a>
+            <a href="archivos/tercer_ano.html">Tercer Año</a>
+            <a href="archivos/cuarto_ano.html">Cuarto Año</a>
+            <a href="archivos/quinto_ano.html">Quinto Año</a>
+            <a href="archivos/sexto_ano.html">Sexto Año</a>
+            <a href="archivos/autorizaciones.html" class="special">Autorizaciones</a>
+        </nav>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 CE ISD. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
