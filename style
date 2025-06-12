@@ -1,0 +1,18 @@
+/* ---- VARIABLES DE COLOR ---- */
+:root {
+    --color-primario: #c00000; /* Rojo intenso */
+    --color-fondo: #ffffff;    /* Blanco */
+    --color-texto: #333333;    /* Gris oscuro */
+    --color-hover: #e63946;    /* Rojo más claro para hover */
+    --color-borde: #f1f1f1;    /* Gris muy claro para bordes */
+}
+
+/* ---- ESTILOS GENERALES ---- */
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    display: flex;
+    flex-direction: column;
+    min-
