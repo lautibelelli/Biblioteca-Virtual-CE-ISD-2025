@@ -1,80 +1,82 @@
-/* —————  VARIABLES  ————— */
-:root{
-  --rojo:   #c1121f;
+
+:root {
+  --rojo: #c1121f;
   --blanco: #ffffff;
-  --tipografia:"Merriweather", Georgia, "Times New Roman", serif;
+  --tipografia: "Merriweather", Georgia, serif;
 }
 
-/* —————  RESET BÁSICO  ————— */
-html{box-sizing:border-box;scroll-behavior:smooth;}
-,::before,*::after{box-sizing:inherit;margin:0;padding:0;}
-
-/* —————  BASE  ————— */
-body{
-  font-family:var(--tipografia);
-  background:var(--blanco);
-  color:#222;
-  line-height:1.5;
-  padding:0 1rem;
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-/* —————  HEADER  ————— */
-header{
-  background:var(--rojo);
-  color:var(--blanco);
-  text-align:center;
-  padding:1.5rem 0;
-}
-h1{font-size:1.8rem;letter-spacing:.5px;}
-
-/* —————  NAVEGACIÓN  ————— */
-nav{
-  display:flex;
-  flex-wrap:wrap;
-  justify-content:center;
-  gap:.5rem;
-  margin:1rem 0;
-}
-nav a{
-  color:var(--rojo);
-  font-weight:700;
-  text-decoration:none;
+body {
+  font-family: var(--tipografia);
+  background: var(--blanco);
+  color: #222;
+  line-height: 1.5;
+  padding: 0 1rem;
 }
 
-/* —————  CAJAS POR CURSO  ————— */
-.curso-box{
-  background:var(--rojo);
-  color:var(--blanco);
-  border-radius:6px;
-  padding:1rem;
-  margin-bottom:1.25rem;
+header {
+  background: var(--rojo);
+  color: var(--blanco);
+  text-align: center;
+  padding: 1.5rem 1rem;
 }
-.curso-box h2{font-size:1.3rem;margin-bottom:.5rem;}
-.curso-box ul{list-style:none;}
-.curso-box li{margin:.6rem 0;}
-.curso-box a{
-  color:var(--blanco);
-  text-decoration:underline;
+header h1 {
+  font-size: 1.8rem;
 }
-.curso-box a:hover{opacity:.8;}
-
-/* —————  FOOTER  ————— */
-footer{
-  background:var(--rojo);
-  color:var(--blanco);
-  text-align:center;
-  padding:.75rem 0;
-  font-size:1rem;           /* un pelín más grande */
-  margin-top:2rem;
+header p {
+  margin-top: .5rem;
 }
 
-/* —————  MEDIA-QUERY PARA PANTALLAS GRANDES  ————— */
-@media(min-width:768px){
-  body{
-    max-width:600px;        /* no se hace gigante en escritorio */
-    margin:0 auto;
+main {
+  margin-top: 1rem;
+}
+
+.curso-box {
+  background: var(--rojo);
+  color: var(--blanco);
+  border-radius: 6px;
+  padding: 1rem;
+  margin-bottom: 1.25rem;
+}
+.curso-box h2 {
+  font-size: 1.3rem;
+  margin-bottom: .5rem;
+}
+.curso-box ul {
+  list-style: none;
+}
+.curso-box li {
+  margin: .6rem 0;
+}
+.curso-box a {
+  color: var(--blanco);
+  text-decoration: underline;
+}
+.curso-box a:hover {
+  opacity: .85;
+}
+
+footer {
+  background: var(--rojo);
+  color: var(--blanco);
+  text-align: center;
+  padding: .75rem 0;
+  font-size: 1rem;
+  margin-top: 2rem;
+}
+
+@media(min-width: 768px) {
+  body {
+    max-width: 600px;
+    margin: 0 auto;
   }
 }
+
     margin: 0;
     background-color: var(--color-fondo);
     color: var(--color-texto);
