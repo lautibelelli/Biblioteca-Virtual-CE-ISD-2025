@@ -1,15 +1,80 @@
-/* ---- VARIABLES DE COLOR ---- */
-:root {
-    --color-primario: #c00000; /* Rojo intenso */
-    --color-fondo: #ffffff;    /* Blanco */
-    --color-texto: #333333;    /* Gris oscuro */
-    --color-hover: #e63946;    /* Rojo más claro para hover */
-    --color-borde: #f1f1f1;    /* Gris muy claro para bordes */
+/* —————  VARIABLES  ————— */
+:root{
+  --rojo:   #c1121f;
+  --blanco: #ffffff;
+  --tipografia:"Merriweather", Georgia, "Times New Roman", serif;
 }
 
-/* ---- ESTILOS GENERALES ---- */
-body {
-    font-family: 'Lato', sans-serif;
+/* —————  RESET BÁSICO  ————— */
+html{box-sizing:border-box;scroll-behavior:smooth;}
+,::before,*::after{box-sizing:inherit;margin:0;padding:0;}
+
+/* —————  BASE  ————— */
+body{
+  font-family:var(--tipografia);
+  background:var(--blanco);
+  color:#222;
+  line-height:1.5;
+  padding:0 1rem;
+}
+
+/* —————  HEADER  ————— */
+header{
+  background:var(--rojo);
+  color:var(--blanco);
+  text-align:center;
+  padding:1.5rem 0;
+}
+h1{font-size:1.8rem;letter-spacing:.5px;}
+
+/* —————  NAVEGACIÓN  ————— */
+nav{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:.5rem;
+  margin:1rem 0;
+}
+nav a{
+  color:var(--rojo);
+  font-weight:700;
+  text-decoration:none;
+}
+
+/* —————  CAJAS POR CURSO  ————— */
+.curso-box{
+  background:var(--rojo);
+  color:var(--blanco);
+  border-radius:6px;
+  padding:1rem;
+  margin-bottom:1.25rem;
+}
+.curso-box h2{font-size:1.3rem;margin-bottom:.5rem;}
+.curso-box ul{list-style:none;}
+.curso-box li{margin:.6rem 0;}
+.curso-box a{
+  color:var(--blanco);
+  text-decoration:underline;
+}
+.curso-box a:hover{opacity:.8;}
+
+/* —————  FOOTER  ————— */
+footer{
+  background:var(--rojo);
+  color:var(--blanco);
+  text-align:center;
+  padding:.75rem 0;
+  font-size:1rem;           /* un pelín más grande */
+  margin-top:2rem;
+}
+
+/* —————  MEDIA-QUERY PARA PANTALLAS GRANDES  ————— */
+@media(min-width:768px){
+  body{
+    max-width:600px;        /* no se hace gigante en escritorio */
+    margin:0 auto;
+  }
+}
     margin: 0;
     background-color: var(--color-fondo);
     color: var(--color-texto);
