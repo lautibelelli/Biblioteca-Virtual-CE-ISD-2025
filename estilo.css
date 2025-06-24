@@ -76,3 +76,14 @@ footer {
     margin: 0 auto;
   }
 }
+/* ANIMACIÓN DE REBOTE SUAVE EN LAS CAJAS */
+@keyframes rebote-suave {
+  0% { transform: scale(0.97); opacity: 0; }
+  50% { transform: scale(1.03); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.curso-box {
+  animation: rebote-suave 0.6s ease-out;
+  animation-fill-mode: both;
+}
